@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Create Post</title>
+    <link rel="icon" href="../icons/tab.png">
+    <link rel="stylesheet" href="../css/styles-post.css">
+    <script src="../javascript/form.js"></script>
+</head>
+<body>
+    <header id="main-header">
+        <div id="topnav">
+            <section id="search">
+                <a href="search.html">
+                    <img src="../icons/search.png" id="search-icon" class="icons">
+                    <input type="text" placeholder="Search">
+                </a>
+            </section>
+            <img src="../icons/logo.png" id="logo">
+            <section id="nav-in-nav" class="hide">
+                <a href="home.html"><img src="../icons/home.png" class="icons"></a>
+                <a href="#"><img src="../icons/post.png" class="icons"></a>
+                <a href="blog.html"><img src="../icons/blog.png" class="icons"></a>
+                <a href="settings.html"><img src="../icons/settings.png" class="icons"></a>
+            </section>
+        </div>
+    </header>
+    <main id="main-content">
+        <h1>Create a Post</h1>
+        <form id="make-post">
+            <input type="hidden" name="_id" value="-1" />
+            <input type="hidden" name="username" value="aaaaaaaaaa" />
+            <section id="photo">
+                <label for="img"><h1>Photo</h1></label>
+                <input type="file" id="img" name="img" required>
+            </section>
+            <section id="description">
+                <h1>Description</h1>
+                <input placeholder="Write a description of your photo." type="text" id="description" name="description" required></input>
+            </section>
+            <p id="tags">
+                <label>Add some tags:</label>
+                <a href="#" id="add-tag">+</a>
+                <section id="tag-boxes"></section>
+            </p>
+            <input type="hidden" name="comments" value="" />
+            <button id="post-button" type="submit"><p>Submit</p></button>
+        </form>
+    </main>
+    <footer id="main-footer">
+        <section id="nav-in-nav">
+            <a href="home.html"><img src="../icons/home.png" class="icons"></a>
+            <a href="#"><img src="../icons/post.png" class="icons"></a>
+            <a href="blog.html"><img src="../icons/blog.png" class="icons"></a>
+            <a href="settings.html"><img src="../icons/settings.png" class="icons"></a>
+        </section>
+    </footer>
+</body>
+</html>
