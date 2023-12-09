@@ -16,24 +16,11 @@ body {
     padding-bottom: 10px;
     position: fixed;
     width: 97%;
+    height: 53px;
 }
 
 #topnav a {
     text-decoration: none;
-}
-
-#search {
-    padding-top: 17px;
-}
-
-#topnav input {
-    padding: 12px;
-    border: 1px solid rgb(172, 172, 172);
-    border-radius: 30px;
-    background-color: rgb(233, 233, 233);
-    font-size: 10px;
-    width: 120px;
-    margin-left: 5px;
 }
 
 #logo {
@@ -46,6 +33,11 @@ body {
 .icons {
     width: 20px;
     padding-top: 10px;
+}
+
+#nav-in-nav {
+    position: absolute;
+    right: 0px;
 }
 
 #nav-in-nav .icons {
@@ -299,10 +291,6 @@ a {
         height: 30px;
         position: fixed;
         top: 13px;
-    }
-
-    #topnav input {
-        width: 170px;
     }
 
     .flex-container {
