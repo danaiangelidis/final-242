@@ -37,7 +37,7 @@ const addTags = (e) => {
     const input = document.createElement("input");
     input.type = "text";
     section.append(input);
-}
+};
 
 const getTags = () => {
     const inputs = document.querySelectorAll("#tag-boxes input");
@@ -55,6 +55,7 @@ const resetForm = () => {
     form.reset();
     form._id = "-1";
     document.getElementById("tag-boxes").innerHTML = "";
+    window.location.href = "blog.html";
 };
 
 window.onload = () => {

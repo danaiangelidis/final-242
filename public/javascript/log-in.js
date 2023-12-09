@@ -24,7 +24,7 @@ const loginSend = async (e) => {
         return;
     }
     
-    window.location.href = "/";
+    window.location.href = "home.html";
 };
 
 window.onload = () => {  

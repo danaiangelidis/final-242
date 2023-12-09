@@ -10,14 +10,14 @@
     <header id="main-header">
         <div id="topnav">
             <section id="search">
-                <a href="search.html">
+                <form id="search-value-form">
                     <img src="../icons/search.png" id="search-icon" class="icons">
-                    <input type="text" placeholder="Search">
-                </a>
+                    <input type="text" placeholder="Search" name="search-value" id="search-value">
+                </form>
             </section>
             <img src="../icons/logo.png" id="logo">
             <section id="nav-in-nav" class="hide">
-                <a href="#"><img src="../icons/home.png" class="icons"></a>
+                <a href="home.html"><img src="../icons/home.png" class="icons"></a>
                 <a href="post.html"><img src="../icons/post.png" class="icons"></a>
                 <a href="blog.html"><img src="../icons/blog.png" class="icons"></a>
                 <a href="settings.html"><img src="../icons/settings.png" class="icons"></a>
@@ -26,6 +26,10 @@
     </header>
     <main id="main-content">
         <section id="all-posts" class="flex-container"></section>
+        <section id="view-post-box" class="hidden modal">
+            <span id="close-view" class="close">&times;</span>
+                <div id="view-post" class="flex-container"></div>
+        </section>
     </main>
     <footer id="main-footer">
         <section id="nav-in-nav">

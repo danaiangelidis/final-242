@@ -113,7 +113,8 @@ input::placeholder {
     justify-content: center;
 }
 
-#buttons button {
+#buttons button,
+#submit-button {
     display: block;
     margin: 15px 20px;
     background-color: #4F4F4F;
@@ -122,6 +123,10 @@ input::placeholder {
     font-size: larger;
     font-weight: bold;
     padding: 10px 20px;
+}
+
+#submit-button {
+    margin: auto;
 }
 
 #log-out-button {
