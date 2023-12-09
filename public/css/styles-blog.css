@@ -132,7 +132,7 @@ input::placeholder {
 }
 
 .close {
-    color: var(--dis1);
+    color: #4F4F4F;
     float: right;
     font-size: 28px;
     font-weight: bold;
@@ -163,7 +163,7 @@ input::placeholder {
 #are-you-sure {
     padding: 10px;
     background: white;
-    width: 100%;
+    width: 70%;
 }
 
 #ays-yes,
@@ -197,7 +197,6 @@ a {
     width: 90%;
     max-height: 80%;
     box-shadow: #6a6a6a 0px 0px 900px;
-    margin: auto;
 }
 
 #post-comment {
@@ -269,6 +268,11 @@ a {
 
 #main-footer a {
     text-decoration: none;
+}
+
+#nav-in-nav-footer .icons {
+    padding: 10px 20px;
+    padding-top: 20px;
 }
 
 /* Media Query */

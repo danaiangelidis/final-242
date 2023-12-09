@@ -184,7 +184,7 @@ const deletePost = async(post) => {
     showPosts();
     document.getElementById("view-post").innerHTML = "";
     resetForm();
-}
+};
 
 const populateEditForm = (post) => {
     const form = document.getElementById("post-edit-form");

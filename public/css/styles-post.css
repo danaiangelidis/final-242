@@ -79,10 +79,20 @@ body {
 }
 
 #photo h1,
-#description h1 {
+#description h1,
+#tags h1,
+#add-tag {
     color: #6C6C6C;
     text-align: left;
     font-weight: 500;
+}
+
+#add-tag {
+    font-size: large;
+}
+
+a {
+    text-decoration: none;
 }
 
 #description input[type="text"] {
@@ -96,6 +106,17 @@ body {
 
 #description input[type="text"]::placeholder {
     color: #BEBEBE;
+}
+
+#tags input[type="text"] {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 40%;
+    height: 10px;
+    padding: 10px;
+    margin: 5px;
+    background-color: #EFEFEF;
+    border: 1px solid #BBBBBB;
+    border-radius: 7px;
 }
 
 #post-button {
@@ -124,6 +145,11 @@ body {
 
 #main-footer a {
     text-decoration: none;
+}
+
+#nav-in-nav-footer .icons {
+    padding: 10px 20px;
+    padding-top: 20px;
 }
 
 /* Media Query */

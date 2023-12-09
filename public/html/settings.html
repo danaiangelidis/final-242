@@ -19,27 +19,21 @@
         </div>
     </header>
     <main id="main-content">
-        <h1>Edit Profile</h1>
-        <h3>Change Username</h3>
-        <form id="edit-user">
-            <p>
-                <label for="txt-new-username">Username</label>
-                <input type="text" id="txt-new-username" placeholder="user1">
-            </p>
-            <h3>Change Password</h3>
-            <p>
-                <label for="txt-new-pass">New Password</label>
-                <input type="password" id="txt-new-pass" placeholder="New password">
-            </p>
-            <button type="submit" id="submit-button">Submit Changes</button>
-        </form>
+        <h1>Account Settings</h1>
+        <div id="are-you-sure" class="hidden modal">
+            <span id="close-ays" class="close">&times;</span>
+            <h2>Hang on!</h2>
+            <p id="msg"></p>
+            <a id="ays-yes">Yes</a>
+            <a id="ays-no">No</a>
+        </div>
         <section id="buttons" class="flex-container">
-            <a href="log-in.html"><button id="log-out-button">Log Out</button></a>
-            <a href="sign-up.html"><button id="deac-acc-button">Deactivate Account</button></a>
+            <button id="log-out-button"><a href="log-in.html">Log Out</a></button>
+            <button id="deac-acc-button">Deactivate Account</button>
         </section>
     </main>
     <footer id="main-footer">
-        <section id="nav-in-nav">
+        <section id="nav-in-nav-footer">
             <a href="home.html"><img src="../icons/home.png" class="icons"></a>
             <a href="post.html"><img src="../icons/post.png" class="icons"></a>
             <a href="blog.html"><img src="../icons/blog.png" class="icons"></a>

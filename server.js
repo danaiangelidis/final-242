@@ -81,6 +81,36 @@ app.post("/api/login", async (req, res) => {
     res.send("Success!");
 });
 
+app.delete("/api/users/:id", (req, res) => {
+    removeUser(res, req.params.id);
+});
+
+const removeUser = async (res, id) => {
+    const post = await User.findByIdAndDelete(id);
+    res.send(post);
+};
+
+app.put("/api/users/:id", (req, res) => {
+    const resultPass = validatePassword(req.body);
+
+    if (resultPass.error) {
+        console.log(resultPass.error.details[0].message);
+        return;
+    }
+    
+    updateUser(req, res);
+});
+
+const updateUser = async (req, res) => {
+    let fieldsToUpdate = {
+        password: req.body.password,
+    };
+
+    const result = await User.updateOne({ _id: req.params.id }, fieldsToUpdate);
+    const user = await User.findById(req.params.id);
+    res.send(user);
+};
+
 const validateUnique = async (res, username) => {
     const user = await User.findOne({ username: username });
 
@@ -89,6 +119,14 @@ const validateUnique = async (res, username) => {
         return false;
     }
     return true;
+};
+
+const validatePassword = (user) => {
+    const schema = Joi.object({
+        password: Joi.string().min(6).required(),
+    });
+
+    return schema.validate(user);
 };
 
 const validateUser = (user) => {

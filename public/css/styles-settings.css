@@ -54,6 +54,10 @@ body {
     display: none;
 }
 
+.hidden {
+    display: none;
+}
+
 /* Main Content */
 
 #main-content {
@@ -72,47 +76,16 @@ body {
     color: #6C6C6C;
 }
 
-#buttons {
-    width: 80%;
-}
-
-label,
-input {
-    display: inline-block;
-    
-}
-
-label {
-    width: 100px;
-    text-align: right;
-    padding: 5px;
-    justify-content: center;
-}
-
-input {
-    width: 200px;
-    background-color: #EFEFEF;
-    border: 1px solid #BBBBBB;
-    border-radius: 5px;
-    padding: 5px;
-}
-
-input::placeholder {
-    color: #BBBBBB;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: smaller;
-}
 
 #buttons {
+    width: 90%;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-#buttons button,
-#submit-button {
-    display: block;
+button {
     margin: 15px 20px;
     background-color: #4F4F4F;
     color: white;
@@ -120,18 +93,59 @@ input::placeholder {
     font-size: larger;
     font-weight: bold;
     padding: 10px 20px;
-}
-
-#submit-button {
-    margin: auto;
-}
-
-#log-out-button {
-    width: 150px;
-}
-
-#deac-acc-button {
     width: 200px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+#are-you-sure {
+    padding: 10px;
+    background: white;
+    width: 50%;
+}
+
+#ays-yes,
+#ays-no {
+    background-color: #4F4F4F;
+    padding: 5px 20px;
+    font-weight: bold;
+    font-size: small;
+    color: white;
+    display: inline-block;
+}
+
+#ays-yes:hover,
+#ays-no:hover {
+    background-color: #707070;
+    cursor: pointer;
+}
+
+.modal {
+    overflow-y: scroll;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: auto;
+    top: 5%;
+    width: 90%;
+    max-height: 80%;
+    box-shadow: #6a6a6a 0px 0px 900px;
+}
+
+.close {
+    color: #4F4F4F;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 0px 5px;
+}
+
+.close:hover {
+    color: black;
+    cursor: pointer;
 }
 
 /* Main Footer */
@@ -149,6 +163,11 @@ input::placeholder {
 
 #main-footer a {
     text-decoration: none;
+}
+
+#nav-in-nav-footer .icons {
+    padding: 10px 20px;
+    padding-top: 20px;
 }
 
 /* Media Query */
@@ -188,5 +207,10 @@ input::placeholder {
 
     #main-footer {
         display: none;
+    }
+
+    #are-you-sure {
+        margin: 80px 0%;
+        width: 30%;
     }
 }
